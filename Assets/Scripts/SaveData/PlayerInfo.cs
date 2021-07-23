@@ -24,11 +24,11 @@ namespace SaveData
         public string PlayerTransform { get; set; }
 
         public override string ToString() =>
-            $"Id: {Id}, " +
-            $"Player Name: {Name}, " +
-            $"Max HP: {MaxHP}, Current HP: {CurrentHP}, " +
-            $"Max STAM: {MaxStam}, Current Stam: {CurrentStam}, " +
-            $"Experience: {Experience}, " +
+            $"Id: {Id}\n" +
+            $"Player Name: {Name}\n" +
+            $"Max HP: {MaxHP}, Current HP: {CurrentHP}\n" +
+            $"Max STAM: {MaxStam}, Current Stam: {CurrentStam}\n" +
+            $"Experience: {Experience}\n" +
             $"Player Transform: {PlayerTransform}";
     }
 }
