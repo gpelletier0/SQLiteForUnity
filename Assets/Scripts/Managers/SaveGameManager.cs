@@ -61,6 +61,12 @@ public class SaveGameManager
     public PlayerInfo GetFirstPlayerInfo() => _db.Table<PlayerInfo>().FirstOrDefault();
 
     /// <summary>
+    /// Gets the last player info in the PlayerInfo table
+    /// </summary>
+    /// <returns>PlayerInfo or null</returns>
+    public PlayerInfo GetLastPlayerInfo() => _db.Table<PlayerInfo>().Skip(GetPlayerInfoCount() - 1).FirstOrDefault();
+
+    /// <summary>
     /// Gets all player info from the PlayerInfo table
     /// </summary>
     /// <returns>List of PlayerInfo</returns>
